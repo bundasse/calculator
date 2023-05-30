@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{font-family: 'NanumSquareRound';}
+h1, h1 span{font-family: 'Cafe24Ssurround';}
+@layer components{
+    .inputBox{
+        @apply border rounded p-2 text-right w-28 md:w-40 placeholder:text-[#e0c294];
+    }
+    .title{
+        @apply font-extrabold text-xl w-full mb-3 text-rose-600 before:inline-block before:w-4 before:h-4 before:bg-rose-500 before:mr-2;
+    }
+}
